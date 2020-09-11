@@ -9,10 +9,10 @@ import Foundation
 
 public class FenwickTree<T: UnsignedInteger> {
     private var number: Int
-    private var data: [T] = []
+    private var data: [T]
 
-    public init() {
-        number = 0
+    public convenience init() {
+        self.init(0)
     }
 
     public init(_ number: Int) {
